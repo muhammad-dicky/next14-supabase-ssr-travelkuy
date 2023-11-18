@@ -4,6 +4,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import SignInForm from "./SignInForm";
 import RegisterForm from "./RegisterForm";
 import OAuthForm from "./OAuthForm";
+import OAuthFormGoogle from "./OAuthFormGoogle";
 
 export function AuthForm() {
 	return (
@@ -21,6 +22,7 @@ export function AuthForm() {
 				</TabsContent>
 			</Tabs>
 			<OAuthForm />
+			<OAuthFormGoogle/>
 		</div>
 	);
 }

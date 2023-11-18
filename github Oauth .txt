@@ -1,0 +1,4 @@
+github Oauth :
+client ID = 8f14694aa11a22453094
+
+Client Secrets = 9018f7d473eec60082743002f07838075cf556e0

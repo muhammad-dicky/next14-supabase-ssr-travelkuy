@@ -1,4 +1,16 @@
-export async function createTodo(title: string) {}
+"use server"
+
+import createSupabaseServerClient from "@/lib/supabase/server"
+
+export async function createTodo(title: string) {
+
+    const supabase = await createSupabaseServerClient();
+
+   const result = await supabase.from("todo").insert({title}).single()
+
+   return JSON.stringify(result)
+
+}
 
 export async function readTodo() {}
 
